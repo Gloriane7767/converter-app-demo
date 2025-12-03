@@ -13,6 +13,7 @@ public class ConverterApp {
         System.out.println(" 1- Currency Converter ");
         System.out.println(" 2- Temperature Converter ");
         System.out.println(" 3- Distance Converter ");
+        System.out.println(" 4- Exit ");
         int choice = scanner.nextInt();
 
         switch (choice) {
