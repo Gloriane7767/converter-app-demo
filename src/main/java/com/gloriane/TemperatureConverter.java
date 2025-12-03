@@ -11,13 +11,16 @@ public class TemperatureConverter {
         System.out.println("2. Fahrenheit to Celsius");
         System.out.println("3. Exit");
     }
-    
+
+    // Implementation of currency conversion logic goes here
     public void convert() {
         System.out.println("\n=== Temperature Converter Selected ===");
         Scanner scanner = new Scanner(System.in);
 
+        // Controls the loop
         boolean running = true;
 
+        // Do conversion
         while (running) {
             displayMenu();
             int choice = scanner.nextInt();

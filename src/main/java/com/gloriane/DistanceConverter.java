@@ -11,13 +11,15 @@ public class DistanceConverter {
         System.out.print("Enter your choice (1-2): ");
     }
 
+    // Implementation of currency conversion logic goes here
     public void convert() {
-        System.out.println("Distance Converter Selected.");
+        System.out.println("=== Distance Converter Selected ===");
         Scanner scanner = new Scanner(System.in);
 
+        // Controls the loop
         boolean running = true;
 
-        // Implementation of distance conversion logic goes here
+        // Do conversion
         while (running) {
             displayMenu();
             int choice = scanner.nextInt();

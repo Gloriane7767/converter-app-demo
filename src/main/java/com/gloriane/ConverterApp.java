@@ -1,6 +1,4 @@
 package com.gloriane;
-
-import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.Scanner;
 
 public class ConverterApp {
