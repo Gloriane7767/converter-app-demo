@@ -1,5 +1,7 @@
 package com.gloriane;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class TemperatureConverter {
@@ -25,7 +27,8 @@ public class TemperatureConverter {
             displayMenu();
             int choice = scanner.nextInt();
             double temperature = scanner.nextDouble();
-
+            LocalDateTime timestamp = LocalDateTime.now();
+            System.out.println("Conversion time: " + timestamp.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
             double result;
             switch (choice) {
                 case 1:

@@ -1,5 +1,7 @@
 package com.gloriane;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class DistanceConverter {
@@ -23,11 +25,17 @@ public class DistanceConverter {
         while (running) {
             displayMenu();
             int choice = scanner.nextInt();
+            LocalDateTime timestamp = LocalDateTime.now();
+            System.out.println("Transaction time: " + timestamp.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 
             switch (choice) {
                 case 1:
                     System.out.println("Enter distance in meters: ");
                     double meters = scanner.nextDouble();
+                    if (meters < 0) {
+                        System.out.println("Distance cannot be negative.");
+                        break;
+                    }
                     double kilometers = meters / 1000.0; // Conversion factor
                     System.out.printf("%.2f meters = %.2f kilometers%n", meters, kilometers);
                     break;
