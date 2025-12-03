@@ -1,5 +1,7 @@
 package com.gloriane;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class CurrencyConverter {
@@ -28,6 +30,8 @@ public class CurrencyConverter {
             displayMenu();
             int choice = scanner.nextInt();
             double amount, result;
+            LocalDateTime timestamp = LocalDateTime.now();
+            System.out.println("Converted: " + timestamp.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 
             switch (choice) {
                 case 1:
