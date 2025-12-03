@@ -9,7 +9,6 @@ public class ConverterApp {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(" Choose your converter : ");
-        System.out.println(" Options : ");
         System.out.println(" 1- Currency Converter ");
         System.out.println(" 2- Temperature Converter ");
         System.out.println(" 3- Distance Converter ");
@@ -33,15 +32,5 @@ public class ConverterApp {
         }
     }
 
-    //Currencies Intake
-    public static void displayMenu() {
-        System.out.println("\n=== Currency Converter Menu ===");
-        System.out.println("1. Convert SEK to USD");
-        System.out.println("2. Convert USD to SEK");
-
-        System.out.println("3. Convert SEK to Euro");
-        System.out.println("4. Convert Euro to SEK");
-        System.out.println("5. Exit");
-        System.out.print("Enter your choice (1-5): ");
-    }
 }
+

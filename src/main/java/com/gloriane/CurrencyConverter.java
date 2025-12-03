@@ -2,18 +2,24 @@ package com.gloriane;
 
 import java.util.Scanner;
 
-import static com.gloriane.ConverterApp.displayMenu;
-
 public class CurrencyConverter {
     public void convert() {
         System.out.println("Currency Converter Selected.");
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("\n=== Currency Converter Menu ===");
+        System.out.println("1. Convert SEK to USD");
+        System.out.println("2. Convert USD to SEK");
+
+        System.out.println("3. Convert SEK to Euro");
+        System.out.println("4. Convert Euro to SEK");
+        System.out.println("5. Exit");
+        System.out.print("Enter your choice (1-5): ");
+
        // Controls the loop
         boolean running = true;
 
         while (running) {
-            displayMenu();
             int choice = scanner.nextInt();
             double amount, result;
             switch (choice) {
