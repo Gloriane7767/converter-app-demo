@@ -32,11 +32,17 @@ public class TemperatureConverter {
                     System.out.println("Enter Temperature: ");
                     result = (temperature * 9 / 5) + 32;
                     System.out.printf("%.2f Celsius = %.2f Fahrenheit%n", temperature, result);
+                    if(temperature < 32){
+                        System.out.println("Warning: The temperature entered is below freezing point of water!");
+                    }
                     break;
                 case 2:
                     System.out.println("Enter Temperature: ");
                     result = (temperature - 32) * 5 / 9;
                     System.out.printf("%.2f Fahrenheit = %.2f Celsius%n", temperature, result);
+                    if (temperature < 32) {
+                        System.out.println("Warning: The temperature entered is below freezing point of water!");
+                    }
                     break;
                 case 3:
                     running = false;
