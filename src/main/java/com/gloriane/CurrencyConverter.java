@@ -2,12 +2,16 @@ package com.gloriane;
 
 import java.util.Scanner;
 
+import static com.gloriane.ConverterApp.displayMenu;
+
 public class CurrencyConverter {
     public void convert() {
         System.out.println("Currency Converter Selected.");
         Scanner scanner = new Scanner(System.in);
 
        // Controls the loop
+        boolean running = true;
+
         while (running) {
             displayMenu();
             int choice = scanner.nextInt();
