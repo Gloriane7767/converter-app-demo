@@ -13,7 +13,7 @@ public class TemperatureConverter {
     }
     
     public void convert() {
-        System.out.println("Temperature Converter Selected.");
+        System.out.println("\n=== Temperature Converter Selected ===");
         Scanner scanner = new Scanner(System.in);
 
         boolean running = true;
@@ -21,18 +21,17 @@ public class TemperatureConverter {
         while (running) {
             displayMenu();
             int choice = scanner.nextInt();
-            
+            double temperature = scanner.nextDouble();
+
             double result;
             switch (choice) {
                 case 1:
                     System.out.println("Enter Temperature: ");
-                    double temperature = scanner.nextDouble();
                     result = (temperature * 9 / 5) + 32;
                     System.out.printf("%.2f Celsius = %.2f Fahrenheit%n", temperature, result);
                     break;
                 case 2:
                     System.out.println("Enter Temperature: ");
-                    temperature = scanner.nextDouble();
                     result = (temperature - 32) * 5 / 9;
                     System.out.printf("%.2f Fahrenheit = %.2f Celsius%n", temperature, result);
                     break;

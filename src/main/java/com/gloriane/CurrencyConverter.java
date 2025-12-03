@@ -16,7 +16,7 @@ public class CurrencyConverter {
     }
 
     public void convert() {
-        System.out.println("Currency Converter Selected.");
+        System.out.println("\n=== Currency Converter Selected ===");
         Scanner scanner = new Scanner(System.in);
         
        // Controls the loop
