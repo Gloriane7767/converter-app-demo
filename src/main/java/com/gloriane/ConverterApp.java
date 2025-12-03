@@ -42,6 +42,5 @@ public class ConverterApp {
         System.out.println("4. Convert Euro to SEK");
         System.out.println("5. Exit");
         System.out.print("Enter your choice (1-5): ");
-
     }
 }
